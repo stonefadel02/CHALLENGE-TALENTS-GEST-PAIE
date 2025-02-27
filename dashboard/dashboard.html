@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
-    
+
     <script>
         function toggleSidebar() {
             document.getElementById('sidebar').classList.toggle('-translate-x-full');
@@ -19,6 +19,7 @@
         }
     </script>
 </head>
+
 <body class="">
     <div class="flex">
         <!-- Sidebar -->
@@ -30,7 +31,7 @@
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
-            <ul class="flex flex-col py-3">
+            <ul class="flex flex-col gap-2 py-3">
 
                 <li class="sidebar-links flex gap-3 items-center py-2 px-4 rounded cursor-pointer">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,9 +53,21 @@
 
                     </p>
                 </li>
-                <li class="sidebar-links flex gap-3 items-center py-2 px-4 rounded cursor-pointer"
+                <li class="sidebar-links flex gap-2 justify-between items-center py-2 px-4 rounded cursor-pointer"
                     onclick="toggleSubmenu('analytics-submenu')">
-                    <i class="fas fa-chart-line mr-2"></i> Gestion administrative
+                    <div class="flex gap-2 items-center">
+                        <i class="fas fa-chart-line mr-2"></i> <span class="text-sm">
+                            Gestion administrative
+                    
+                        </span>
+                    
+                    </div>
+                    
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.94754 6.0009L0.449735 1.46527C0.116831 1.12914 0.116831 0.587019 0.449735 0.250891C0.608361 0.0903187 0.824728 9.53674e-07 1.0504 9.53674e-07C1.27607 9.53674e-07 1.49244 0.0903187 1.65107 0.250891L6.74953 5.39281C7.08349 5.72857 7.08349 6.27143 6.74953 6.60719L1.65128 11.7491C1.49244 11.9097 1.27607 12 1.0504 12C0.824728 12 0.608361 11.9097 0.449524 11.7491C0.116831 11.4129 0.116831 10.8708 0.449947 10.5347L4.94754 6.0009Z"
+                            fill="#00027D" fill-opacity="0.56" />
+                    </svg>
                 </li>
                 <ul id="analytics-submenu" class="submenu-design ml-6 py-2 px-2 hidden">
                     <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
@@ -90,9 +103,21 @@
 
                     </p>
                 </li>
-                <li class="sidebar-links flex gap-3 items-center py-2 px-4 rounded cursor-pointer"
+                <li class="sidebar-links flex justify-between gap-2 items-center py-2 px-4 rounded cursor-pointer"
                     onclick="toggleSubmenu('reports-submenu')">
-                    <i class="fas fa-cogs mr-2"></i> Journal RH
+                    <div class="flex gap-2 items-center">
+                        <i class="fas fa-chart-line mr-2"></i> <span class="text-sm">
+                            raport
+                    
+                        </span>
+                    
+                    </div>
+                    
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.94754 6.0009L0.449735 1.46527C0.116831 1.12914 0.116831 0.587019 0.449735 0.250891C0.608361 0.0903187 0.824728 9.53674e-07 1.0504 9.53674e-07C1.27607 9.53674e-07 1.49244 0.0903187 1.65107 0.250891L6.74953 5.39281C7.08349 5.72857 7.08349 6.27143 6.74953 6.60719L1.65128 11.7491C1.49244 11.9097 1.27607 12 1.0504 12C0.824728 12 0.608361 11.9097 0.449524 11.7491C0.116831 11.4129 0.116831 10.8708 0.449947 10.5347L4.94754 6.0009Z"
+                            fill="#00027D" fill-opacity="0.56" />
+                    </svg>
                 </li>
                 <ul id="reports-submenu" class="submenu-design ml-6 py-2 px-2 hidden"">
                                     <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
