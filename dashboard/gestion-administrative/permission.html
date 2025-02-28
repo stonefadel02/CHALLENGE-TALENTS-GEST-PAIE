@@ -88,7 +88,7 @@
 <body class="">
     <div class="flex">
         <!-- Sidebar -->
-    <div id="sidebar"
+        <div id="sidebar"
         class="w-full min-h-screen h-auto md:w-72 bg-white border-r border-gray-300 p-5 fixed md:relative md:translate-x-0 -translate-x-full transition-transform duration-300">
         <div class="flex justify-between items-center mb-5">
             <a href="../../index.html"><img src="../../assets/logo.jpg" alt="logo" class="w-2/3"></a>
@@ -97,9 +97,10 @@
             </button>
         </div>
         <ul class="flex flex-col gap-2 py-3">
-        
-        
-            <a href="./dashboard.html" class="sidebar-links flex gap-3 items-center py-2 px-4 rounded cursor-pointer">
+
+
+            <a href="../dashboard.html"
+                class="sidebar-links flex gap-3 items-center py-2 px-4 rounded cursor-pointer">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M2.75 6.57143C2.75 5.82821 2.75045 5.31015 2.77938 4.90513C2.80781 4.50729 2.86092 4.2763 2.93773 4.10024C3.16473 3.57997 3.57997 3.16473 4.10024 2.93773C4.2763 2.86092 4.50729 2.80781 4.90513 2.77938C5.31015 2.75045 5.82821 2.75 6.57143 2.75C7.31465 2.75 7.83271 2.75045 8.23773 2.77938C8.63556 2.80781 8.86655 2.86092 9.04261 2.93773C9.56288 3.16473 9.97813 3.57997 10.2051 4.10024C10.2819 4.2763 10.3351 4.50729 10.3635 4.90513C10.3924 5.31015 10.3929 5.82821 10.3929 6.57143C10.3929 7.31465 10.3924 7.83271 10.3635 8.23773C10.3351 8.63556 10.2819 8.86655 10.2051 9.04261C9.97813 9.56288 9.56288 9.97813 9.04261 10.2051C8.86655 10.2819 8.63556 10.3351 8.23773 10.3635C7.83271 10.3924 7.31465 10.3929 6.57143 10.3929C5.82821 10.3929 5.31015 10.3924 4.90513 10.3635C4.50729 10.3351 4.2763 10.2819 4.10024 10.2051C3.57997 9.97813 3.16473 9.56288 2.93773 9.04261C2.86092 8.86655 2.80781 8.63556 2.77938 8.23773C2.75045 7.83271 2.75 7.31465 2.75 6.57143Z"
@@ -116,7 +117,7 @@
                 </svg>
                 <p>
                     Tableau de Bord
-        
+
                 </p>
             </a>
             <li class="sidebar-links flex gap-2 justify-between items-center py-2 px-4 rounded cursor-pointer"
@@ -128,11 +129,11 @@
                             fill="currentColor" />
                     </svg>
                     Gestion administrative
-        
+
                     </span>
-        
+
                 </div>
-        
+
                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M4.94754 6.0009L0.449735 1.46527C0.116831 1.12914 0.116831 0.587019 0.449735 0.250891C0.608361 0.0903187 0.824728 9.53674e-07 1.0504 9.53674e-07C1.27607 9.53674e-07 1.49244 0.0903187 1.65107 0.250891L6.74953 5.39281C7.08349 5.72857 7.08349 6.27143 6.74953 6.60719L1.65128 11.7491C1.49244 11.9097 1.27607 12 1.0504 12C0.824728 12 0.608361 11.9097 0.449524 11.7491C0.116831 11.4129 0.116831 10.8708 0.449947 10.5347L4.94754 6.0009Z"
@@ -142,18 +143,26 @@
             <ul id="analytics-submenu" class="submenu-design ml-6 py-2 px-2 hidden">
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        <a href="./gestion-administrative/presence.html" class="">Gestion des absences</a>
+                        <a href="./gestion-administrative/permission.html" class="">Gestion des absences</a>
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
-                    <a href="./gestion-administrative/permission.html" class="text-sm  text-black">
-                        Etat congé par entreprise
-                    </a>
+                    <span class="text-sm  text-black">
+                        <a href="./gestion-administrative/permission.html">
+                            Etat congé par entreprise
+                        </a>
+                    </span>
+
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
-                    <a href="./gestion-administrative/manage-accident.html" class="text-sm  text-black">
-                        Gestion des accidents
-                    </a>
+
+                    <span class="text-sm  text-black">
+
+                        <a href="./gestion-administrative/manage-accident.html">
+                            Gestion des accidents
+                        </a>
+                    </span>
+
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
@@ -166,9 +175,12 @@
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
-                    <a href="./gestion-administrative/formation.html" class="text-sm  text-black">
-                        Formation
-                    </a>
+                    <span class="text-sm  text-black">
+
+                        <a href="./gestion-administrative/formation.html">
+                            Formation
+                        </a>
+                    </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
@@ -181,9 +193,9 @@
                         <i class="fas fa-chart-line mr-2"></i> <span class="text-sm">
                             Statistique
                         </span>
-        
+
                     </div>
-        
+
                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M4.94754 6.0009L0.449735 1.46527C0.116831 1.12914 0.116831 0.587019 0.449735 0.250891C0.608361 0.0903187 0.824728 9.53674e-07 1.0504 9.53674e-07C1.27607 9.53674e-07 1.49244 0.0903187 1.65107 0.250891L6.74953 5.39281C7.08349 5.72857 7.08349 6.27143 6.74953 6.60719L1.65128 11.7491C1.49244 11.9097 1.27607 12 1.0504 12C0.824728 12 0.608361 11.9097 0.449524 11.7491C0.116831 11.4129 0.116831 10.8708 0.449947 10.5347L4.94754 6.0009Z"
@@ -216,16 +228,16 @@
                             Données identitaires
                         </span>
                     </li>
-        
+
                 </ul>
                 <li class="sidebar-links flex gap-2 justify-between items-center py-2 px-4 rounded cursor-pointer"
                     onclick="toggleSubmenu('agent-submenu')">
                     <div class="flex gap-2 items-center">
                         <i class="fas fa-chart-line mr-2"></i> <span class="text-sm">
                             Gestion contrat agent </span>
-        
+
                     </div>
-        
+
                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M4.94754 6.0009L0.449735 1.46527C0.116831 1.12914 0.116831 0.587019 0.449735 0.250891C0.608361 0.0903187 0.824728 9.53674e-07 1.0504 9.53674e-07C1.27607 9.53674e-07 1.49244 0.0903187 1.65107 0.250891L6.74953 5.39281C7.08349 5.72857 7.08349 6.27143 6.74953 6.60719L1.65128 11.7491C1.49244 11.9097 1.27607 12 1.0504 12C0.824728 12 0.608361 11.9097 0.449524 11.7491C0.116831 11.4129 0.116831 10.8708 0.449947 10.5347L4.94754 6.0009Z"
@@ -257,25 +269,26 @@
             <li class="sidebar-links flex justify-between gap-2 items-center py-2 px-4 rounded cursor-pointer"
                 onclick="toggleSubmenu('reports-submenu')">
                 <div class="flex gap-2 items-center">
-        
+
                     <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
                             <path
                                 d="M7 17H5C3.89543 17 3 16.1046 3 15V11C3 9.34315 4.34315 8 6 8H7M7 17V14H17V17M7 17V18C7 19.1046 7.89543 20 9 20H15C16.1046 20 17 19.1046 17 18V17M17 17H19C20.1046 17 21 16.1046 21 15V11C21 9.34315 19.6569 8 18 8H17M7 8V6C7 4.89543 7.89543 4 9 4H15C16.1046 4 17 4.89543 17 6V8M7 8H17M15 11H17"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
                         </g>
                     </svg>
-        
+
                     <span class="text-sm">
                         Impression
-        
-        
+
+
                     </span>
-        
+
                 </div>
-        
+
                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M4.94754 6.0009L0.449735 1.46527C0.116831 1.12914 0.116831 0.587019 0.449735 0.250891C0.608361 0.0903187 0.824728 9.53674e-07 1.0504 9.53674e-07C1.27607 9.53674e-07 1.49244 0.0903187 1.65107 0.250891L6.74953 5.39281C7.08349 5.72857 7.08349 6.27143 6.74953 6.60719L1.65128 11.7491C1.49244 11.9097 1.27607 12 1.0504 12C0.824728 12 0.608361 11.9097 0.449524 11.7491C0.116831 11.4129 0.116831 10.8708 0.449947 10.5347L4.94754 6.0009Z"
@@ -283,26 +296,26 @@
                 </svg>
             </li>
             <ul id="reports-submenu" class="submenu-design ml-6 py-2 px-2 hidden"">
-                                            <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
+                                <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
                 <span class="text-sm  text-black">
                     Bulletin de paie par entreprise
-        
+
                 </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
                         Bulletin de paie par employé
-        
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
                         Email
-        
+
                     </span>
                 </li>
             </ul>
-        
+
             <li class="sidebar-links flex gap-2 justify-between items-center py-2 px-4 rounded cursor-pointer"
                 onclick="toggleSubmenu('journal-submenu')">
                 <div class="flex gap-2 items-center">
@@ -322,9 +335,9 @@
                     </svg><span class="text-sm">
                         Journal RH
                     </span>
-        
+
                 </div>
-        
+
                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M4.94754 6.0009L0.449735 1.46527C0.116831 1.12914 0.116831 0.587019 0.449735 0.250891C0.608361 0.0903187 0.824728 9.53674e-07 1.0504 9.53674e-07C1.27607 9.53674e-07 1.49244 0.0903187 1.65107 0.250891L6.74953 5.39281C7.08349 5.72857 7.08349 6.27143 6.74953 6.60719L1.65128 11.7491C1.49244 11.9097 1.27607 12 1.0504 12C0.824728 12 0.608361 11.9097 0.449524 11.7491C0.116831 11.4129 0.116831 10.8708 0.449947 10.5347L4.94754 6.0009Z"
@@ -332,15 +345,15 @@
                 </svg>
             </li>
             <ul id="journal-submenu" class="submenu-design ml-6 py-2 px-2 hidden"">
-                                            <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
+                                <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
                 <span class="text-sm  text-black">
                     Consulter
-        
+
                 </span>
                 </li>
             </ul>
-        
-        
+
+
             <li class="sidebar-links flex gap-2 justify-between items-center py-2 px-4 rounded cursor-pointer"
                 onclick="toggleSubmenu('salaire-submenu')">
                 <div class="flex gap-2 items-center">
@@ -357,11 +370,11 @@
                         </defs>
                     </svg>
                     Traitement Salaire
-        
+
                     </span>
-        
+
                 </div>
-        
+
                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M4.94754 6.0009L0.449735 1.46527C0.116831 1.12914 0.116831 0.587019 0.449735 0.250891C0.608361 0.0903187 0.824728 9.53674e-07 1.0504 9.53674e-07C1.27607 9.53674e-07 1.49244 0.0903187 1.65107 0.250891L6.74953 5.39281C7.08349 5.72857 7.08349 6.27143 6.74953 6.60719L1.65128 11.7491C1.49244 11.9097 1.27607 12 1.0504 12C0.824728 12 0.608361 11.9097 0.449524 11.7491C0.116831 11.4129 0.116831 10.8708 0.449947 10.5347L4.94754 6.0009Z"
@@ -369,28 +382,28 @@
                 </svg>
             </li>
             <ul id="salaire-submenu" class="submenu-design ml-6 py-2 px-2 hidden"">
-                                        <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
+                            <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
                 <span class="text-sm  text-black">
                     Institutions financières
-        
+
                 </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
                         Simulation d'amortissement
-        
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
                         Avance
-        
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
                         Mensualité
-        
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
@@ -398,16 +411,16 @@
                         Etat prélèvement mensualité
                     </span>
                 </li>
-        
+
                 <li class="sidebar-links flex gap-2 justify-between items-center py-2 px-4 rounded cursor-pointer"
                     onclick="toggleSubmenu('acc-submenu')">
                     <div class="flex gap-2 items-center">
                         <i class="fas fa-chart-line mr-2"></i> <span class="text-sm">
                             Accessoires de salaire
                         </span>
-        
+
                     </div>
-        
+
                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M4.94754 6.0009L0.449735 1.46527C0.116831 1.12914 0.116831 0.587019 0.449735 0.250891C0.608361 0.0903187 0.824728 9.53674e-07 1.0504 9.53674e-07C1.27607 9.53674e-07 1.49244 0.0903187 1.65107 0.250891L6.74953 5.39281C7.08349 5.72857 7.08349 6.27143 6.74953 6.60719L1.65128 11.7491C1.49244 11.9097 1.27607 12 1.0504 12C0.824728 12 0.608361 11.9097 0.449524 11.7491C0.116831 11.4129 0.116831 10.8708 0.449947 10.5347L4.94754 6.0009Z"
@@ -415,7 +428,7 @@
                     </svg>
                 </li>
                 <ul id="acc-submenu" class="submenu-design ml-6 py-2 px-2 hidden"">
-                                <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
+                    <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
                     <span class="text-sm  text-black">
                         Avantages et retenues</span>
                     </li>
@@ -442,9 +455,9 @@
                         <i class="fas fa-chart-line mr-2"></i> <span class="text-sm">
                             Gestion contrat agent
                         </span>
-        
+
                     </div>
-        
+
                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M4.94754 6.0009L0.449735 1.46527C0.116831 1.12914 0.116831 0.587019 0.449735 0.250891C0.608361 0.0903187 0.824728 9.53674e-07 1.0504 9.53674e-07C1.27607 9.53674e-07 1.49244 0.0903187 1.65107 0.250891L6.74953 5.39281C7.08349 5.72857 7.08349 6.27143 6.74953 6.60719L1.65128 11.7491C1.49244 11.9097 1.27607 12 1.0504 12C0.824728 12 0.608361 11.9097 0.449524 11.7491C0.116831 11.4129 0.116831 10.8708 0.449947 10.5347L4.94754 6.0009Z"
@@ -452,7 +465,7 @@
                     </svg>
                 </li>
                 <ul id="acc2-submenu" class="submenu-design ml-6 py-2 px-2 hidden"">
-                                <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
+                    <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
                     <span class="text-sm  text-black">
                         Enregistrement contrat
                     </span>
@@ -463,16 +476,16 @@
                         </span>
                     </li>
                 </ul>
-        
+
                 <li class="sidebar-links flex gap-2 justify-between items-center py-2 px-4 rounded cursor-pointer"
                     onclick="toggleSubmenu('acc3-submenu')">
                     <div class="flex gap-2 items-center">
                         <i class="fas fa-chart-line mr-2"></i> <span class="text-sm">
                             Calcul et validation des salaires
                         </span>
-        
+
                     </div>
-        
+
                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M4.94754 6.0009L0.449735 1.46527C0.116831 1.12914 0.116831 0.587019 0.449735 0.250891C0.608361 0.0903187 0.824728 9.53674e-07 1.0504 9.53674e-07C1.27607 9.53674e-07 1.49244 0.0903187 1.65107 0.250891L6.74953 5.39281C7.08349 5.72857 7.08349 6.27143 6.74953 6.60719L1.65128 11.7491C1.49244 11.9097 1.27607 12 1.0504 12C0.824728 12 0.608361 11.9097 0.449524 11.7491C0.116831 11.4129 0.116831 10.8708 0.449947 10.5347L4.94754 6.0009Z"
@@ -480,7 +493,7 @@
                     </svg>
                 </li>
                 <ul id="acc3-submenu" class="submenu-design ml-6 py-2 px-2 hidden"">
-                            <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
+                <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
                     <span class="text-sm  text-black">
                         Aperçu avant traitement salaire
                     </span>
@@ -501,16 +514,16 @@
                         </span>
                     </li>
                 </ul>
-        
+
                 <li class="sidebar-links flex gap-2 justify-between items-center py-2 px-4 rounded cursor-pointer"
                     onclick="toggleSubmenu('bilan-submenu')">
                     <div class="flex gap-2 items-center">
                         <i class="fas fa-chart-line mr-2"></i> <span class="text-sm">
                             Bilan
                         </span>
-        
+
                     </div>
-        
+
                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M4.94754 6.0009L0.449735 1.46527C0.116831 1.12914 0.116831 0.587019 0.449735 0.250891C0.608361 0.0903187 0.824728 9.53674e-07 1.0504 9.53674e-07C1.27607 9.53674e-07 1.49244 0.0903187 1.65107 0.250891L6.74953 5.39281C7.08349 5.72857 7.08349 6.27143 6.74953 6.60719L1.65128 11.7491C1.49244 11.9097 1.27607 12 1.0504 12C0.824728 12 0.608361 11.9097 0.449524 11.7491C0.116831 11.4129 0.116831 10.8708 0.449947 10.5347L4.94754 6.0009Z"
@@ -523,8 +536,8 @@
                             <select id=""
                                 class="h-12 text-sm text-black rounded-lg block w-full py-2.5 px-4 focus:outline-none">
                                 <option selected>Type de bilan</option>
-                                <option class=" sidebar-sub-links cursor-pointer:text-white  cursor-pointer" value="">Mensuel CS
-                                    par entreprise</option>
+                                <option class=" sidebar-sub-links cursor-pointer:text-white  cursor-pointer"
+                                    value="">Mensuel CS par entreprise</option>
                                 <option class=" sidebar-sub-links cursor-pointer" value="">Périodique CS par employé
                                 </option>
                                 <option class=" hover:text-white sidebar-sub-links cursor-pointer" value="">
@@ -532,17 +545,17 @@
                             </select>
                         </div>
                     </li>
-        
+
                     <li class=" sidebar-sub-links py-1 ml-2 px-3 border border-gray-100 rounded cursor-pointer">
                         <div class="block w-full">
                             <select id=""
                                 class="h-12 text-sm text-black rounded-lg block w-full py-2.5 px-4 focus:outline-none">
                                 <option selected>Type de bilan</option>
-                                <option class=" sidebar-sub-links cursor-pointer:text-white  cursor-pointer" value="">Mensuel CF
-                                    par entreprise
+                                <option class=" sidebar-sub-links cursor-pointer:text-white  cursor-pointer"
+                                    value="">Mensuel CF par entreprise
                                 </option>
                                 <option class=" sidebar-sub-links cursor-pointer" value="">Périodique CF par employé
-        
+
                                 </option>
                                 <option class=" hover:text-white sidebar-sub-links cursor-pointer" value="">
                                     Périodique CF par entreprise</option>
@@ -554,12 +567,12 @@
                             <select id=""
                                 class="h-12 text-sm text-black rounded-lg block w-full py-2.5 px-4 focus:outline-none">
                                 <option selected>Type de bilan</option>
-                                <option class=" sidebar-sub-links cursor-pointer:text-white  cursor-pointer" value="">Mensuel
-                                    salaire par entreprise
+                                <option class=" sidebar-sub-links cursor-pointer:text-white  cursor-pointer"
+                                    value="">Mensuel salaire par entreprise
                                 </option>
                                 <option class=" sidebar-sub-links cursor-pointer" value="">Périodique salaire par
                                     employé
-        
+
                                 </option>
                                 <option class=" hover:text-white sidebar-sub-links cursor-pointer" value="">
                                     Périodique salaire par entreprise</option>
@@ -573,9 +586,9 @@
                         <i class="fas fa-chart-line mr-2"></i> <span class="text-sm">
                             Récapitulatif
                         </span>
-        
+
                     </div>
-        
+
                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M4.94754 6.0009L0.449735 1.46527C0.116831 1.12914 0.116831 0.587019 0.449735 0.250891C0.608361 0.0903187 0.824728 9.53674e-07 1.0504 9.53674e-07C1.27607 9.53674e-07 1.49244 0.0903187 1.65107 0.250891L6.74953 5.39281C7.08349 5.72857 7.08349 6.27143 6.74953 6.60719L1.65128 11.7491C1.49244 11.9097 1.27607 12 1.0504 12C0.824728 12 0.608361 11.9097 0.449524 11.7491C0.116831 11.4129 0.116831 10.8708 0.449947 10.5347L4.94754 6.0009Z"
@@ -583,7 +596,7 @@
                     </svg>
                 </li>
                 <ul id="recap-submenu" class="submenu-design ml-6 py-2 px-2 hidden"">
-                        <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
+            <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
                     <span class="text-sm  text-black">
                         Mensuel CS par risque prof
                     </span>
@@ -600,9 +613,9 @@
                         <i class="fas fa-chart-line mr-2"></i> <span class="text-sm">
                             Etat virement salaire
                         </span>
-        
+
                     </div>
-        
+
                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M4.94754 6.0009L0.449735 1.46527C0.116831 1.12914 0.116831 0.587019 0.449735 0.250891C0.608361 0.0903187 0.824728 9.53674e-07 1.0504 9.53674e-07C1.27607 9.53674e-07 1.49244 0.0903187 1.65107 0.250891L6.74953 5.39281C7.08349 5.72857 7.08349 6.27143 6.74953 6.60719L1.65128 11.7491C1.49244 11.9097 1.27607 12 1.0504 12C0.824728 12 0.608361 11.9097 0.449524 11.7491C0.116831 11.4129 0.116831 10.8708 0.449947 10.5347L4.94754 6.0009Z"
@@ -610,7 +623,7 @@
                     </svg>
                 </li>
                 <ul id="etat-submenu" class="submenu-design ml-6 py-2 px-2 hidden"">
-                        <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
+            <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
                     <span class="text-sm  text-black">
                         Mensuel par banque
                     </span>
@@ -637,137 +650,143 @@
                     </li>
                 </ul>
             </ul>
-        
-        
+
+
             <li class="sidebar-links flex gap-3 items-center py-2 px-4 rounded cursor-pointer"
                 onclick="toggleSubmenu('parametre-submenu')">
                 <i class="fas fa-cogs mr-2"></i> Paramètres
             </li>
             <ul id="parametre-submenu" class="submenu-design ml-6 py-2 px-2 hidden"">
-                            <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
+                <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
                 <span class="text-sm  text-black">
-                    Reports
-        
+                    Avantages et retenues
+
                 </span>
                 </li>
-                <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
+                <li class=" sidebar-sub-links py-1 ml-2 px-3 rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Banques
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Catégorie employé
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Catégorie évènement
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Colonne affichage AR
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Diplôme
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Direction
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Email config
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Entreprise
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Etat contrat
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Lien de parenté
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Mode paiement
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Motif d’arrêt de contrat
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Motif d’augmentation
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Mouvement contrat
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Nature contrat
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Nature élément salaire
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Niveau d’affichage AR
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Poste
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Secteur
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
-                        Performance
-        
+                        Sécurité sociale
+
+                    </span>
+                </li>
+                <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
+                    <span class="text-sm  text-black">
+                        Service
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
@@ -778,31 +797,30 @@
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
                         Situation matrimoniale
-        
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
                         Type absence
-        
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
                         Type contrat
-        
+
                     </span>
                 </li>
                 <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                     <span class="text-sm  text-black">
                         Utilisateurs
-        
+
                     </span>
                 </li>
             </ul>
         </ul>
     </div>
-
         <!-- Main Content -->
         <div class="flex-1 flex flex-col ">
             <!-- Navbar -->
