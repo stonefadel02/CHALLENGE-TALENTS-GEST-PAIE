@@ -33,8 +33,9 @@
                 </button>
             </div>
             <ul class="flex flex-col gap-2 py-3">
+              
 
-                <li class="sidebar-links flex gap-3 items-center py-2 px-4 rounded cursor-pointer">
+                <a  href="./dashboard.html" class="sidebar-links flex gap-3 items-center py-2 px-4 rounded cursor-pointer">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M2.75 6.57143C2.75 5.82821 2.75045 5.31015 2.77938 4.90513C2.80781 4.50729 2.86092 4.2763 2.93773 4.10024C3.16473 3.57997 3.57997 3.16473 4.10024 2.93773C4.2763 2.86092 4.50729 2.80781 4.90513 2.77938C5.31015 2.75045 5.82821 2.75 6.57143 2.75C7.31465 2.75 7.83271 2.75045 8.23773 2.77938C8.63556 2.80781 8.86655 2.86092 9.04261 2.93773C9.56288 3.16473 9.97813 3.57997 10.2051 4.10024C10.2819 4.2763 10.3351 4.50729 10.3635 4.90513C10.3924 5.31015 10.3929 5.82821 10.3929 6.57143C10.3929 7.31465 10.3924 7.83271 10.3635 8.23773C10.3351 8.63556 10.2819 8.86655 10.2051 9.04261C9.97813 9.56288 9.56288 9.97813 9.04261 10.2051C8.86655 10.2819 8.63556 10.3351 8.23773 10.3635C7.83271 10.3924 7.31465 10.3929 6.57143 10.3929C5.82821 10.3929 5.31015 10.3924 4.90513 10.3635C4.50729 10.3351 4.2763 10.2819 4.10024 10.2051C3.57997 9.97813 3.16473 9.56288 2.93773 9.04261C2.86092 8.86655 2.80781 8.63556 2.77938 8.23773C2.75045 7.83271 2.75 7.31465 2.75 6.57143Z"
@@ -53,7 +54,7 @@
                         Tableau de Bord
 
                     </p>
-                </li>
+                </a>
                 <li class="sidebar-links flex gap-2 justify-between items-center py-2 px-4 rounded cursor-pointer"
                     onclick="toggleSubmenu('analytics-submenu')">
                     <div class="flex gap-2 items-center">
@@ -73,18 +74,18 @@
                 <ul id="analytics-submenu" class="submenu-design ml-6 py-2 px-2 hidden">
                     <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                         <span class="text-sm  text-black">
-                            <a href="./presence.html" class="">Gestion des absences</a>
+                            <a href="./gestion-administrative/presence.html" class="">Gestion des absences</a>
                         </span>
                     </li>
                     <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
-                        <span class="text-sm  text-black">
+                        <a href="./gestion-administrative/permission.html" class="text-sm  text-black">
                             Etat congé par entreprise
-                        </span>
+                        </a>
                     </li>
                     <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
-                        <span class="text-sm  text-black">
-                            Gestion des accidents de travail
-                        </span>
+                        <a href="./gestion-administrative/manage-accident.html" class="text-sm  text-black">
+                            Gestion des accidents
+                        </a>
                     </li>
                     <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                         <span class="text-sm  text-black">
@@ -97,9 +98,9 @@
                         </span>
                     </li>
                     <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
-                        <span class="text-sm  text-black">
+                        <a href="./gestion-administrative/formation.html" class="text-sm  text-black">
                             Formation
-                        </span>
+                        </a>
                     </li>
                     <li class="sidebar-sub-links py-1 ml-2 px-3  rounded cursor-pointer">
                         <span class="text-sm  text-black">
