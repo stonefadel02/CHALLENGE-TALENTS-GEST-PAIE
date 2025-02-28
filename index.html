@@ -25,16 +25,16 @@
                 </a>
                 <div class="hidden md:flex space-x-6">
                     <a href="/" class="hover:text-blue-600">Accueil</a>
-                    <a href="/about" class="hover:text-blue-600">À Propos</a>
-                    <a href="/services" class="hover:text-blue-600">Services</a>
-                    <a href="/prices" class="hover:text-blue-600">Tarifs</a>
-                    <a href="/contact" class="hover:text-blue-600">Contact</a>
-                    <a href="/features" class="hover:text-blue-600">Fonctionnalités</a>
+                    <a href="#services" class="hover:text-blue-600">Services</a>
+                    <a href="#features" class="hover:text-blue-600">Fonctionnalités</a>
+                    <a href="#prices" class="hover:text-blue-600">Tarifs</a>
+                    <a href="#about" class="hover:text-blue-600">À Propos</a>
+                    <a href="#contact" class="hover:text-blue-600">Contact</a>
                 </div>
                 <div class="hidden md:flex space-x-4">
-                    <a href="/signin"
+                    <a href="/authentification/login.html"
                         class="border px-4 py-2 rounded-full border-[#FF5A00] hover:bg-[#FF5A00] hover:text-white">Connexion</a>
-                    <a href="/signup"
+                    <a href="/authentification/register.html"
                         class="px-4 py-2 rounded-full bg-[#FF5A00] text-white hover:bg-[#00027D]">Inscription</a>
                 </div>
                 <button class="md:hidden" onclick="document.getElementById('menu-mobile').classList.toggle('hidden')">
@@ -47,14 +47,14 @@
             </div>
             <div id="menu-mobile" class="hidden md:hidden bg-white shadow-md p-4 absolute w-full left-0 top-full">
                 <a href="/" class="block py-2">Accueil</a>
-                <a href="/about" class="block py-2">À Propos</a>
-                <a href="/services" class="block py-2">Services</a>
-                <a href="/prices" class="block py-2">Tarifs</a>
-                <a href="/features" class="block py-2">Fonctionnalités</a>
+                <a href="#about" class="block py-2">À Propos</a>
+                <a href="#services" class="block py-2">Services</a>
+                <a href="#prices" class="block py-2">Tarifs</a>
+                <a href="#features" class="block py-2">Fonctionnalités</a>
                 <div class="mt-4 space-y-2">
-                    <a href="/signin"
+                    <a href="./authentification/login.html"
                         class="border px-4 py-2 rounded-full border-[#FF5A00] hover:bg-[#FF5A00] hover:text-white">Connexion</a>
-                    <a href="/signup"
+                    <a href="/authentification/register.html"
                         class="px-4 py-2 rounded-full bg-[#FF5A00] text-white hover:bg-[#00027D]">Inscription</a>
                 </div>
             </div>
@@ -78,7 +78,7 @@
     </div>
 
     <!-- Features Section -->
-    <section id="features" class="container space-y-6  py-8 mx-auto md:py-12 lg:py-24">
+    <section id="services" class="container space-y-6  py-8 mx-auto md:py-12 lg:py-24">
         <div class="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
             <h2 class="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">Services de Ressources Humaines</h2>
             <p class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
@@ -253,7 +253,7 @@
         </div>
     </div>
 
-<div class="relative overflow-hidden bg-gray-900 pt-16 pb-32 space-y-24">
+<div id="features" class="relative overflow-hidden bg-gray-900 pt-16 pb-32 space-y-24">
     <!-- Section 1 : Automatisation des tâches administratives -->
     <div class="relative">
         <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
@@ -445,7 +445,7 @@
 
 
     <!-- Testimonials Section -->
-    <div class="bg-gray-900">
+    <div id="features"  class="bg-gray-900">
         <section class="max-w-5xl mx-auto w-full px-10 py-10">
             <div class="flex items-center justify-center flex-col gap-y-2 py-5">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold max-w-md mx-auto text-center text-white">
@@ -522,7 +522,7 @@
 
 
     <!-- Pricing Section -->
-    <section id="pricing" class="container mx-auto px-6 py-16">
+    <section id="prices" class="container mx-auto px-6 py-16">
         <div class="space-y-5 px-8 py-12">
             <div class="container flex space-x-2">
                 <div class="no-scrollbar overflow-hidden">
@@ -984,7 +984,7 @@
     </section>
 
     <!-- Contact Section -->
-    <div class="h-screen bg-gray-900 flex-grow">
+    <div id="contact" class="h-screen bg-gray-900 flex-grow">
         <div class="pt-10 md:pt-20">
             <div class="p-4 md:p-8">
                 <h1 class="text-white text-center pb-8 font-light text-4xl md:text-5xl lg:text-6xl">Contact Me</h1>
