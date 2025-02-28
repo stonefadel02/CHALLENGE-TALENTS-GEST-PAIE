@@ -26,11 +26,15 @@
             <div class="w-full h-full md:min-h-screen bg-cover bg-center bg-no-repeat"
                 style="background-image: url('/assets/login.png');">
             </div>
-            <div class="flex justify-center">
+            <div class="flex flex-col items-center justify-center">
+                <a href="../index.html" class="cursor-pointer">
+                    <img src="../assets/logo.jpg" class=" mx-auto" />
+                </a>
                 <div class="w-full max-w-md bg-white p-6 rounded-lg flex items-center justify-center">
                     <div class="w-full">
                         <div id="step-1" class="step">
-                            <h2 class="text-xl font-semibold mb-4">Se connecter rapidement</h2>
+                           
+                            <h2 class="text-xl font-semibold text-center mb-4">Se connecter rapidement</h2>
                             <div class="flex flex-col gap-3">
                                 <button
                                     class="w-full max-w-md font-bold rounded-full py-3 border text-gray-900 flex items-center justify-center  focus:outline-none ">
@@ -102,14 +106,14 @@
                         <div id="step-2" class="step hidden flex flex-col gap-3">
                             <h2 class="text-xl font-semibold mb-4">Informations personnelles</h2>
                             <div class="flex flex-col gap-2">
-                                <label for="name">noms</label>
-                                <input type="text" placeholder="Alex russel" class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
+                                <label for="name">Nom</label>
+                                <input type="text" placeholder="Marc Dupont" class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
 
                             </div>
                            
                             <div class="flex flex-col gap-2">
-                                <label for="email">email</label>
-                                <input type="text" placeholder="alex@gmail.com" class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
+                                <label for="email">Email</label>
+                                <input type="text" placeholder="marc@gmail.com" class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
                             
                             </div>
                         <div class="flex flex-col gap-2">
@@ -135,20 +139,20 @@
                             </div>
                             <div class="flex flex-col gap-2">
                                 <label for="noms-entreprise">Mot de passe</label>
-                                <input type="text" placeholder="alex@2000 "
+                                <input type="text" placeholder="marcx@2000 "
                                     class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
                             
                             </div>
                             <div class="flex flex-col gap-2">
                                 <label for="noms-entreprise">Confirmer le mot de passe</label>
-                                <input type="text" placeholder="alex@2000 "
+                                <input type="text" placeholder="marc@2000 "
                                     class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
                             
                             </div>
                         
                             <div class="flex justify-between">
-                                <button onclick="prevStep(2)" class="bg-gray-300 px-4 py-2 rounded">Retour</button>
-                                <button class="bg-[#ff5a00] text-white px-4 py-2 rounded">S'inscrire</button>
+                                <button onclick="prevStep(2)" class="bg-gray-300 px-4 py-2 cursor-pointer rounded">Retour</button>
+                                <button class="bg-[#ff5a00] text-white px-4 py-2 cursor-pointer rounded">S'inscrire</button>
                             </div>
                         </div>
                     </div>
