@@ -103,34 +103,49 @@
                             <h2 class="text-xl font-semibold mb-4">Informations personnelles</h2>
                             <div class="flex flex-col gap-2">
                                 <label for="name">noms</label>
-                                <input type="text" placeholder="Nom" class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
+                                <input type="text" placeholder="Alex russel" class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
 
                             </div>
                            
                             <div class="flex flex-col gap-2">
                                 <label for="email">email</label>
-                                <input type="text" placeholder="address email" class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
+                                <input type="text" placeholder="alex@gmail.com" class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
                             
                             </div>
                         <div class="flex flex-col gap-2">
                             <label for="email">Telephone</label>
-                            <input type="text" placeholder="a"
+                            <input type="text" placeholder="+1 432 342 234"
                                 class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
                         
                         </div>
                             <div class="flex justify-between">
                                 <button onclick="prevStep(1)" class="bg-gray-200 px-4 py-2 rounded">Retour</button>
                                 <button onclick="nextStep(3)"
-                                    class="bg-gray-900 text-white px-4 py-2 rounded">Suivant</button>
+                                    class="bg-gray-900 text-white px-4 py-2 rounded cursor-pointer" >Suivant</button>
                             </div>
                         </div>
 
                         <div id="step-3" class="step hidden flex flex-col gap-3">
                             <h2 class="text-xl font-semibold mb-4">Informations professionnelles</h2>
-                            <input type="text" placeholder="Nom de l'entreprise" class="w-full p-2 mb-2 border rounded">
-                            <input type="password" placeholder="Mot de passe" class="w-full p-2 mb-2 border rounded">
-                            <input type="password" placeholder="Confirmer le mot de passe"
-                                class="w-full p-2 mb-2 border rounded">
+                            <div class="flex flex-col gap-2">
+                                <label for="noms-entreprise">Noms de l'entreprise</label>
+                                <input type="text" placeholder="Working@corp "
+                                    class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
+                            
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="noms-entreprise">Mot de passe</label>
+                                <input type="text" placeholder="alex@2000 "
+                                    class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
+                            
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="noms-entreprise">Confirmer le mot de passe</label>
+                                <input type="text" placeholder="alex@2000 "
+                                    class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
+                            
+                            </div>
+                        
                             <div class="flex justify-between">
                                 <button onclick="prevStep(2)" class="bg-gray-300 px-4 py-2 rounded">Retour</button>
                                 <button class="bg-[#ff5a00] text-white px-4 py-2 rounded">S'inscrire</button>
