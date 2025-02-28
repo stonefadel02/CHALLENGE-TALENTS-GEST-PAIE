@@ -25,7 +25,7 @@
     <div class="flex">
         <!-- Sidebar -->
         <div id="sidebar"
-            class="w-full min-h-screen h-full md:w-72 bg-white border-r border-gray-300 p-5 fixed md:relative md:translate-x-0 -translate-x-full transition-transform duration-300">
+            class="w-full min-h-screen h-auto md:w-72 bg-white border-r border-gray-300 p-5 fixed md:relative md:translate-x-0 -translate-x-full transition-transform duration-300">
             <div class="flex justify-between items-center mb-5">
                 <a href="../index.html"><img src="../assets/logo.jpg" alt="logo" class="w-1/2"></a>
                 <button class=" text-gray-700" onclick="toggleSidebar()">
@@ -59,6 +59,7 @@
                     <div class="flex gap-2 items-center">
                         <i class="fas fa-chart-line mr-2"></i> <span class="text-sm">
                             Gestion administrative
+
                         </span>
 
                     </div>
@@ -187,6 +188,7 @@
                 <li class="sidebar-links flex justify-between gap-2 items-center py-2 px-4 rounded cursor-pointer"
                     onclick="toggleSubmenu('reports-submenu')">
                     <div class="flex gap-2 items-center">
+
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M2.75 6.57143C2.75 5.82821 2.75045 5.31015 2.77938 4.90513C2.80781 4.50729 2.86092 4.2763 2.93773 4.10024C3.16473 3.57997 3.57997 3.16473 4.10024 2.93773C4.2763 2.86092 4.50729 2.80781 4.90513 2.77938C5.31015 2.75045 5.82821 2.75 6.57143 2.75C7.31465 2.75 7.83271 2.75045 8.23773 2.77938C8.63556 2.80781 8.86655 2.86092 9.04261 2.93773C9.56288 3.16473 9.97813 3.57997 10.2051 4.10024C10.2819 4.2763 10.3351 4.50729 10.3635 4.90513C10.3924 5.31015 10.3929 5.82821 10.3929 6.57143C10.3929 7.31465 10.3924 7.83271 10.3635 8.23773C10.3351 8.63556 10.2819 8.86655 10.2051 9.04261C9.97813 9.56288 9.56288 9.97813 9.04261 10.2051C8.86655 10.2819 8.63556 10.3351 8.23773 10.3635C7.83271 10.3924 7.31465 10.3929 6.57143 10.3929C5.82821 10.3929 5.31015 10.3924 4.90513 10.3635C4.50729 10.3351 4.2763 10.2819 4.10024 10.2051C3.57997 9.97813 3.16473 9.56288 2.93773 9.04261C2.86092 8.86655 2.80781 8.63556 2.77938 8.23773C2.75045 7.83271 2.75 7.31465 2.75 6.57143Z"
@@ -204,6 +206,7 @@
 
                         <span class="text-sm">
                             Impression
+
 
                         </span>
 
@@ -799,48 +802,123 @@
             </div>
 
             <!-- Content -->
-
             <div class="px-4 py-4">
                 <h1 class="text-black font-semibold">Statistiques Générales</h1>
-                <div class="grid  grid-cols-2 sm:grid-cols-4">
+                <div class="grid grid-cols-2 sm:grid-cols-4">
+                    <div class="flex flex-col gap-4 text-white bg-[#898989] rounded m-2 p-8 shadow-lg hover:shadow-2xl">
+                        <p class="text-sm">Total des Employés</p>
+                        <p class="text-xl font-semibold">12000</p>
+                    </div>
+                    <div class="flex flex-col gap-4 text-white bg-[#898989] rounded m-2 p-8 shadow-lg hover:shadow-2xl">
+                        <p class="text-sm">Employés Actifs</p>
+                        <p class="text-xl font-semibold">9500</p>
+                    </div>
+                    <div class="flex flex-col gap-4 text-white bg-[#898989] rounded m-2 p-8 shadow-lg hover:shadow-2xl">
+                        <p class="text-sm">Congés en Cours</p>
+                        <p class="text-xl font-semibold">300</p>
+                    </div>
+                    <div class="flex flex-col gap-4 text-white bg-[#898989] rounded m-2 p-8 shadow-lg hover:shadow-2xl">
+                        <p class="text-sm">Nouveaux Recrutements</p>
+                        <p class="text-xl font-semibold">150</p>
+                    </div>
+                </div>
 
-                    <div
-                        class="flex flex-col gap-4 text-white  block bg-[#898989]  rounded  m-2 p-8 rounded-lg shadow-lg hover:shadow-2xl ">
-                        <p class=" text-sm">Total des Employés</p>
-                        <p class=" text-xl font-semibold ">
-                            12000
-                        </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                    <div>
+                        <canvas id="chart1" class="bg-white p-4 rounded-lg shadow-lg "></canvas>
 
                     </div>
-                    <div
-                        class="flex flex-col gap-4 text-white  block bg-[#898989]  rounded  m-2 p-8 rounded-lg shadow-lg hover:shadow-2xl ">
-                        <p class=" text-sm">Total des Employés</p>
-                        <p class=" text-xl font-semibold ">
-                            12000
-                        </p>
+                    <div>
+                        <canvas id="chart4" class="bg-white p-4 rounded-lg shadow-lg"></canvas>
 
                     </div>
-                    <div
-                        class="flex flex-col gap-4 text-white  block bg-[#898989]  rounded  m-2 p-8 rounded-lg shadow-lg hover:shadow-2xl ">
-                        <p class=" text-sm">Total des Employés</p>
-                        <p class=" text-xl font-semibold ">
-                            12000
-                        </p>
+
+                    <div>
+                        <canvas id="chart3" class="bg-white p-4 rounded-lg shadow-lg"></canvas>
 
                     </div>
-                    <div
-                        class="flex flex-col gap-4 text-white  block bg-[#898989]  rounded  m-2 p-8 rounded-lg shadow-lg hover:shadow-2xl ">
-                        <p class=" text-sm">Total des Employés</p>
-                        <p class=" text-xl font-semibold ">
-                            12000
-                        </p>
+
+                    <div>
+                        <canvas id="chart2" class="bg-white p-4 rounded-lg shadow-lg"></canvas>
 
                     </div>
+
+
+
 
                 </div>
-                <div></div>
-
             </div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const colors = {
+                        blue: "#00027d",
+                        blueLight: "rgba(0, 2, 125, 0.5)",
+                        orange: "#ff5a00",
+                        orangeLight: "rgba(255, 90, 0, 0.5)"
+                    };
+
+                    const data1 = {
+                        labels: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin'],
+                        datasets: [{
+                            label: 'Embauches Mensuelles',
+                            data: [50, 70, 90, 110, 80, 120],
+                            backgroundColor: colors.blueLight,
+                            borderColor: colors.blue,
+                            borderWidth: 2
+                        }]
+                    };
+
+                    const data2 = {
+                        labels: ['RH', 'IT', 'Ventes', 'Finance', 'Production'],
+                        datasets: [{
+                            label: 'Répartition par Département',
+                            data: [500, 1500, 2500, 1000, 2000],
+                            backgroundColor: [colors.orange, colors.blue, colors.orangeLight, colors.blueLight, "#9966FF"]
+                        }]
+                    };
+
+                    const data3 = {
+                        labels: ['Présents', 'En Congé', 'Absent'],
+                        datasets: [{
+                            label: 'Présence des Employés',
+                            data: [9500, 300, 200],
+                            backgroundColor: [colors.blue, colors.orange, "#dc3545"]
+                        }]
+                    };
+
+                    const data4 = {
+                        labels: ['2022', '2023', '2024'],
+                        datasets: [{
+                            label: 'Croissance du Personnel',
+                            data: [10000, 11000, 12000],
+                            backgroundColor: colors.orangeLight,
+                            borderColor: colors.orange,
+                            borderWidth: 2
+                        }]
+                    };
+
+                    const options = {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: "top"
+                            }
+                        }
+                    };
+
+                    new Chart(document.getElementById('chart1'), { type: 'bar', data: data1, options });
+                    new Chart(document.getElementById('chart2'), { type: 'pie', data: data2, options });
+                    new Chart(document.getElementById('chart3'), { type: 'doughnut', data: data3, options });
+                    new Chart(document.getElementById('chart4'), { type: 'line', data: data4, options });
+                });
+            </script>
+
+
+
 
 
 
