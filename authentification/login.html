@@ -1,12 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <div class="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
+        <div class="max-w-screen-xl  m-0 sm:m-10 bg-white shadow sm:rounded-lg grid grid-cols-1
+                md:grid-cols-2 justify-center flex-1">
+
+
+            <div class=" w-full bg-cover bg-center bg-no-repeat" style="background-image: url('/assets/login.png');">
+            </div>
+
+            <div class=" p-6 sm:p-12">
+                <div>
+                    <img src="../assets/logo.jpg" class="w-32 mx-auto" />
+                </div>
+                <div class="mt-12 flex flex-col items-center">
+                    <div class="max-w-md w-full flex justify-start">
+                        <h1 class="text-2xl xl:text-3xl ">
+                            Connexion
+                        </h1>
+
+                    </div>
+
+                    <div class="w-full flex-1 mt-8">
+                        <div class="flex flex-col gap-4 items-center">
+                            <button
+                                class="w-full max-w-md font-bold rounded-full py-3 border text-gray-900 flex items-center justify-center  focus:outline-none ">
+                                <div class="bg-white p-2 rounded-full">
+                                    <svg class="w-4" viewBox="0 0 533.5 544.3">
+                                        <path
+                                            d="M533.5 278.4c0-18.5-1.5-37.1-4.7-55.3H272.1v104.8h147c-6.1 33.8-25.7 63.7-54.4 82.7v68h87.7c51.5-47.4 81.1-117.4 81.1-200.2z"
+                                            fill="#4285f4" />
+                                        <path
+                                            d="M272.1 544.3c73.4 0 135.3-24.1 180.4-65.7l-87.7-68c-24.4 16.6-55.9 26-92.6 26-71 0-131.2-47.9-152.8-112.3H28.9v70.1c46.2 91.9 140.3 149.9 243.2 149.9z"
+                                            fill="#34a853" />
+                                        <path
+                                            d="M119.3 324.3c-11.4-33.8-11.4-70.4 0-104.2V150H28.9c-38.6 76.9-38.6 167.5 0 244.4l90.4-70.1z"
+                                            fill="#fbbc04" />
+                                        <path
+                                            d="M272.1 107.7c38.8-.6 76.3 14 104.4 40.8l77.7-77.7C405 24.6 339.7-.8 272.1 0 169.2 0 75.1 58 28.9 150l90.4 70.1c21.5-64.5 81.8-112.4 152.8-112.4z"
+                                            fill="#ea4335" />
+                                    </svg>
+                                </div>
+                                <span class="ml-4">
+                                    Continuer avec Google
+                                </span>
+                            </button>
+                            <button
+                                class="w-full max-w-md font-bold rounded-full py-3 border text-gray-900 flex items-center justify-center  focus:outline-none ">
+                                <div class="bg-white p-2 rounded-full">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -4 48 48" version="1.1">
+                                        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Color-" transform="translate(-300.000000, -164.000000)"
+                                                fill="#00AAEC">
+                                                <path
+                                                    d="M348,168.735283 C346.236309,169.538462 344.337383,170.081618 342.345483,170.324305 C344.379644,169.076201 345.940482,167.097147 346.675823,164.739617 C344.771263,165.895269 342.666667,166.736006 340.418384,167.18671 C338.626519,165.224991 336.065504,164 333.231203,164 C327.796443,164 323.387216,168.521488 323.387216,174.097508 C323.387216,174.88913 323.471738,175.657638 323.640782,176.397255 C315.456242,175.975442 308.201444,171.959552 303.341433,165.843265 C302.493397,167.339834 302.008804,169.076201 302.008804,170.925244 C302.008804,174.426869 303.747139,177.518238 306.389857,179.329722 C304.778306,179.280607 303.256911,178.821235 301.9271,178.070061 L301.9271,178.194294 C301.9271,183.08848 305.322064,187.17082 309.8299,188.095341 C309.004402,188.33225 308.133826,188.450704 307.235077,188.450704 C306.601162,188.450704 305.981335,188.390033 305.381229,188.271578 C306.634971,192.28169 310.269414,195.2026 314.580032,195.280607 C311.210424,197.99061 306.961789,199.605634 302.349709,199.605634 C301.555203,199.605634 300.769149,199.559408 300,199.466956 C304.358514,202.327194 309.53689,204 315.095615,204 C333.211481,204 343.114633,188.615385 343.114633,175.270495 C343.114633,174.831347 343.106181,174.392199 343.089276,173.961719 C345.013559,172.537378 346.684275,170.760563 348,168.735283"
+                                                    id="Twitter">
+
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <span class="ml-4">Continuer avec Twitter</span>
+
+
+
+                            </button>
+                        </div>
+
+                        <div class="my-12 border-b text-center">
+                            <div
+                                class="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
+                                Ou
+                            </div>
+                        </div>
+
+                        <div class="mx-auto max-w-md">
+                            <div class="flex flex-col gap-4">
+                                <div class="flex flex-col gap-1">
+                                    <label for="email" class="">email</label>
+                                    <input
+                                        class="w-full px-8 py-4 rounded-lg font-medium border border-gray-600  text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+                                        type="email" placeholder="Email" />
+
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <div class="flex justify-between items-center">
+                                        <label for="password"> mot de passe</label>
+                                        <div class="flex gap-1 items-center">
+                                            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        d="M21.2714 9.17834C20.9814 8.71834 20.6714 8.28834 20.3514 7.88834C19.9814 7.41834 19.2814 7.37834 18.8614 7.79834L15.8614 10.7983C16.0814 11.4583 16.1214 12.2183 15.9214 13.0083C15.5714 14.4183 14.4314 15.5583 13.0214 15.9083C12.2314 16.1083 11.4714 16.0683 10.8114 15.8483C10.8114 15.8483 9.38141 17.2783 8.35141 18.3083C7.85141 18.8083 8.01141 19.6883 8.68141 19.9483C9.75141 20.3583 10.8614 20.5683 12.0014 20.5683C13.7814 20.5683 15.5114 20.0483 17.0914 19.0783C18.7014 18.0783 20.1514 16.6083 21.3214 14.7383C22.2714 13.2283 22.2214 10.6883 21.2714 9.17834Z"
+                                                        fill="#292D32"></path>
+                                                    <path
+                                                        d="M14.0206 9.98062L9.98062 14.0206C9.47062 13.5006 9.14062 12.7806 9.14062 12.0006C9.14062 10.4306 10.4206 9.14062 12.0006 9.14062C12.7806 9.14062 13.5006 9.47062 14.0206 9.98062Z"
+                                                        fill="#292D32"></path>
+                                                    <path
+                                                        d="M18.25 5.74969L14.86 9.13969C14.13 8.39969 13.12 7.95969 12 7.95969C9.76 7.95969 7.96 9.76969 7.96 11.9997C7.96 13.1197 8.41 14.1297 9.14 14.8597L5.76 18.2497H5.75C4.64 17.3497 3.62 16.1997 2.75 14.8397C1.75 13.2697 1.75 10.7197 2.75 9.14969C3.91 7.32969 5.33 5.89969 6.91 4.91969C8.49 3.95969 10.22 3.42969 12 3.42969C14.23 3.42969 16.39 4.24969 18.25 5.74969Z"
+                                                        fill="#292D32"></path>
+                                                    <path
+                                                        d="M14.8581 11.9981C14.8581 13.5681 13.5781 14.8581 11.9981 14.8581C11.9381 14.8581 11.8881 14.8581 11.8281 14.8381L14.8381 11.8281C14.8581 11.8881 14.8581 11.9381 14.8581 11.9981Z"
+                                                        fill="#292D32"></path>
+                                                    <path
+                                                        d="M21.7689 2.22891C21.4689 1.92891 20.9789 1.92891 20.6789 2.22891L2.22891 20.6889C1.92891 20.9889 1.92891 21.4789 2.22891 21.7789C2.37891 21.9189 2.56891 21.9989 2.76891 21.9989C2.96891 21.9989 3.15891 21.9189 3.30891 21.7689L21.7689 3.30891C22.0789 3.00891 22.0789 2.52891 21.7689 2.22891Z"
+                                                        fill="#292D32"></path>
+                                                </g>
+                                            </svg>
+                                            <p>cache</p>
+                                        </div>
+
+                                    </div>
+
+                                    <input
+                                        class="w-full px-8 py-4 rounded-lg font-medium border border-gray-600  text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+                                        type="password" placeholder="Password" />
+
+                                </div>
+
+                            </div>
+                            <div class="flex justify-end mt-2">
+                                <a href="" class="underline">Mot de passe oublier</a>
+
+                            </div>
+                            <div class="flex flex-start">
+                                <button
+                                    class="mt-5  font-semibold bg-[#ff5a00] text-gray-100 px-5 py-3 rounded-xl  transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
+                                    <svg class="w-6 h-6 -ml-2" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                                        <circle cx="8.5" cy="7" r="4" />
+                                        <path d="M20 8v6M23 11h-6" />
+                                    </svg>
+                                    <span class="ml-3">
+                                        Se connecter
+                                    </span>
+                                </button>
+
+                            </div>
+                            <p class="text-xs text-gray-600 text-start mt-3">
+                                Vous n'avez pas de compte ? <a href=""
+                                    class="text-[#ff5a00] font-semibold">S'inscrire</a>
+                            </p>
+
+
+
+                            <p class="mt-3 text-xs text-gray-600 text-start">
+                                I agree to abide by templatana's
+                                <a href="#" class="border-b border-gray-500 border-dotted">
+                                    Terms of Service
+                                </a>
+                                and its
+                                <a href="#" class="border-b border-gray-500 border-dotted">
+                                    Privacy Policy
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>

@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Document</title>
+    <script>
+        function nextStep(step) {
+            document.querySelectorAll('.step').forEach(s => s.classList.add('hidden'));
+            document.getElementById(`step-${step}`).classList.remove('hidden');
+        }
+        function prevStep(step) {
+            document.querySelectorAll('.step').forEach(s => s.classList.add('hidden'));
+            document.getElementById(`step-${step}`).classList.remove('hidden');
+        }
+    </script>
 </head>
+
 <body>
-    
+
+    <div class="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
+        <div class="max-w-screen-xl m-0 sm:m-10 bg-white shadow sm:rounded-lg grid grid-cols-1 md:grid-cols-2 flex-1">
+
+            <div class="w-full h-full md:min-h-screen bg-cover bg-center bg-no-repeat"
+                style="background-image: url('/assets/login.png');">
+            </div>
+            <div class="flex justify-center">
+                <div class="w-full max-w-md bg-white p-6 rounded-lg flex items-center justify-center">
+                    <div class="w-full">
+                        <div id="step-1" class="step">
+                            <h2 class="text-xl font-semibold mb-4">Se connecter rapidement</h2>
+                            <div class="flex flex-col gap-3">
+                                <button
+                                    class="w-full max-w-md font-bold rounded-full py-3 border text-gray-900 flex items-center justify-center  focus:outline-none ">
+                                    <div class="bg-white p-2 rounded-full">
+                                        <svg class="w-4" viewBox="0 0 533.5 544.3">
+                                            <path
+                                                d="M533.5 278.4c0-18.5-1.5-37.1-4.7-55.3H272.1v104.8h147c-6.1 33.8-25.7 63.7-54.4 82.7v68h87.7c51.5-47.4 81.1-117.4 81.1-200.2z"
+                                                fill="#4285f4" />
+                                            <path
+                                                d="M272.1 544.3c73.4 0 135.3-24.1 180.4-65.7l-87.7-68c-24.4 16.6-55.9 26-92.6 26-71 0-131.2-47.9-152.8-112.3H28.9v70.1c46.2 91.9 140.3 149.9 243.2 149.9z"
+                                                fill="#34a853" />
+                                            <path
+                                                d="M119.3 324.3c-11.4-33.8-11.4-70.4 0-104.2V150H28.9c-38.6 76.9-38.6 167.5 0 244.4l90.4-70.1z"
+                                                fill="#fbbc04" />
+                                            <path
+                                                d="M272.1 107.7c38.8-.6 76.3 14 104.4 40.8l77.7-77.7C405 24.6 339.7-.8 272.1 0 169.2 0 75.1 58 28.9 150l90.4 70.1c21.5-64.5 81.8-112.4 152.8-112.4z"
+                                                fill="#ea4335" />
+                                        </svg>
+                                    </div>
+                                    <span class="ml-4">
+                                        Continuer avec Google
+                                    </span>
+                                </button>
+                                <button
+                                    class="w-full max-w-md font-bold rounded-full py-3 border text-gray-900 flex items-center justify-center  focus:outline-none ">
+                                    <div class="bg-white p-2 rounded-full">
+                                        <svg class="w-4" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -4 48 48"
+                                            version="1.1">
+                                            <g id="Icons" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="Color-" transform="translate(-300.000000, -164.000000)"
+                                                    fill="#00AAEC">
+                                                    <path
+                                                        d="M348,168.735283 C346.236309,169.538462 344.337383,170.081618 342.345483,170.324305 C344.379644,169.076201 345.940482,167.097147 346.675823,164.739617 C344.771263,165.895269 342.666667,166.736006 340.418384,167.18671 C338.626519,165.224991 336.065504,164 333.231203,164 C327.796443,164 323.387216,168.521488 323.387216,174.097508 C323.387216,174.88913 323.471738,175.657638 323.640782,176.397255 C315.456242,175.975442 308.201444,171.959552 303.341433,165.843265 C302.493397,167.339834 302.008804,169.076201 302.008804,170.925244 C302.008804,174.426869 303.747139,177.518238 306.389857,179.329722 C304.778306,179.280607 303.256911,178.821235 301.9271,178.070061 L301.9271,178.194294 C301.9271,183.08848 305.322064,187.17082 309.8299,188.095341 C309.004402,188.33225 308.133826,188.450704 307.235077,188.450704 C306.601162,188.450704 305.981335,188.390033 305.381229,188.271578 C306.634971,192.28169 310.269414,195.2026 314.580032,195.280607 C311.210424,197.99061 306.961789,199.605634 302.349709,199.605634 C301.555203,199.605634 300.769149,199.559408 300,199.466956 C304.358514,202.327194 309.53689,204 315.095615,204 C333.211481,204 343.114633,188.615385 343.114633,175.270495 C343.114633,174.831347 343.106181,174.392199 343.089276,173.961719 C345.013559,172.537378 346.684275,170.760563 348,168.735283"
+                                                        id="Twitter">
+
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+
+                                    <span class="ml-4">Continuer avec Twitter</span>
+
+
+
+                                </button>
+
+                            </div>
+
+                            <p class="mt-4 text-center">Ou</p>
+
+                            <button onclick="nextStep(2)"
+                                class="mt-5 w-full font-semibold bg-[#ff5a00] text-gray-100 px-5 py-3 rounded-xl  cursor-pointer flex items-center justify-center focus:shadow-outline focus:outline-none">
+                                <svg class="w-6 h-6 -ml-2" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                                    <circle cx="8.5" cy="7" r="4" />
+                                    <path d="M20 8v6M23 11h-6" />
+                                </svg>
+                                <span class="ml-3">
+                                    Créer un compte
+                                </span>
+                            </button>
+
+                        </div>
+
+                        <div id="step-2" class="step hidden flex flex-col gap-3">
+                            <h2 class="text-xl font-semibold mb-4">Informations personnelles</h2>
+                            <div class="flex flex-col gap-2">
+                                <label for="name">noms</label>
+                                <input type="text" placeholder="Nom" class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
+
+                            </div>
+                           
+                            <div class="flex flex-col gap-2">
+                                <label for="email">email</label>
+                                <input type="text" placeholder="address email" class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
+                            
+                            </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="email">Telephone</label>
+                            <input type="text" placeholder="a"
+                                class="w-full p-2 mb-2 border border-gray-100 ring-2 ring-[#ff740a] rounded">
+                        
+                        </div>
+                            <div class="flex justify-between">
+                                <button onclick="prevStep(1)" class="bg-gray-200 px-4 py-2 rounded">Retour</button>
+                                <button onclick="nextStep(3)"
+                                    class="bg-gray-900 text-white px-4 py-2 rounded">Suivant</button>
+                            </div>
+                        </div>
+
+                        <div id="step-3" class="step hidden flex flex-col gap-3">
+                            <h2 class="text-xl font-semibold mb-4">Informations professionnelles</h2>
+                            <input type="text" placeholder="Nom de l'entreprise" class="w-full p-2 mb-2 border rounded">
+                            <input type="password" placeholder="Mot de passe" class="w-full p-2 mb-2 border rounded">
+                            <input type="password" placeholder="Confirmer le mot de passe"
+                                class="w-full p-2 mb-2 border rounded">
+                            <div class="flex justify-between">
+                                <button onclick="prevStep(2)" class="bg-gray-300 px-4 py-2 rounded">Retour</button>
+                                <button class="bg-[#ff5a00] text-white px-4 py-2 rounded">S'inscrire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
 </body>
+
 </html>
